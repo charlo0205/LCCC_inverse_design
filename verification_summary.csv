@@ -1,0 +1,9 @@
+check,measured,requirement,status
+Derived optimum load equals RL,12.5,12.5 ohm,PASS
+Phasor Re(Zin),30,30 ohm,PASS
+Phasor Im(Zin),-2.48689957516035e-14,absolute value < 1e-6 ohm,PASS
+Physical Re(Zin),29.9922965062818,within 1% of 30 ohm,PASS
+Physical Im(Zin),-0.00173826777004811,absolute value < 0.3 ohm,PASS
+Physical steady-state convergence,0.000179216687006287,window change < 0.001,PASS
+Finite positive powers,0.0330981238805194,both powers > 0 W,PASS
+Overall independent validation,1,all checks pass,PASS

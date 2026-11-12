@@ -1,278 +1,43 @@
-[1] MATLAB 26.2.0.3433840 (R2026b) Update 1; Simulink 26.2; Simscape Electrical 26.2; Optimization Toolbox     Entry point: run_experiment; working folder: C:\Users\charl\Documents\LCCC_inverse_design
-    Source check: technical bg.pdf available=0; handwritten image supplied=0
-[2] Building Simulink models; initial k=0.2000 L=200.000 nH
-[警告: The model name 'LCCC_phasor' is shadowing another name in the MATLAB workspace or path. Type "which -all LCCC_phasor" at the command line to find the other uses of this
-name. You should change the name of the model to avoid problems.] 
-[> 位置：build_model (第 12 行)
-位置: run_experiment (第 10 行)] 
-[警告: The model name 'LCCC_inverse_design' is shadowing another name in the MATLAB workspace or path. Type "which -all LCCC_inverse_design" at the command line to find the other
-uses of this name. You should change the name of the model to avoid problems.] 
-[> 位置：build_model (第 21 行)
-位置: run_experiment (第 10 行)] 
-[3] Checking circuit connectivity and compiling both models
-    Build and compile passed. R1=0.043538 ohm R2=0.044478 ohm
-[4] Running coupling coefficient and load sweep through Simulink
-    k=0.0500: simulated R_opt grid=2.079 ohm, peak coil efficiency=0.95838
-    k=0.1000: simulated R_opt grid=4.117 ohm, peak coil efficiency=0.97897
-    iteration=100 k=0.15000 L=200.000 nH C=0.6888 nF R=0.836 Zin=6.620-0.000j eta=0.94854 error=0.6073 solver=OK
-    k=0.1500: simulated R_opt grid=6.493 ohm, peak coil efficiency=0.98592
-    k=0.2000: simulated R_opt grid=8.154 ohm, peak coil efficiency=0.98943
-    iteration=200 k=0.25000 L=200.000 nH C=0.6888 nF R=2.611 Zin=7.187-0.000j eta=0.98219 error=0.5783 solver=OK
-    k=0.2500: simulated R_opt grid=10.239 ohm, peak coil efficiency=0.99153
-    k=0.3000: simulated R_opt grid=12.858 ohm, peak coil efficiency=0.99294
-    iteration=300 k=0.35000 L=200.000 nH C=0.6888 nF R=8.154 Zin=11.314-0.000j eta=0.99289 error=0.388 solver=OK
-    k=0.3500: simulated R_opt grid=14.409 ohm, peak coil efficiency=0.99395
-    k=0.4000: simulated R_opt grid=16.147 ohm, peak coil efficiency=0.99470
-    iteration=400 k=0.45000 L=200.000 nH C=0.6888 nF R=25.464 Zin=21.263-0.000j eta=0.99507 error=0.08481 solver=OK
-    k=0.4500: simulated R_opt grid=18.095 ohm, peak coil efficiency=0.99528
-    k=0.5000: simulated R_opt grid=20.278 ohm, peak coil efficiency=0.99576
-    k=0.5500: simulated R_opt grid=22.723 ohm, peak coil efficiency=0.99614
-    iteration=500 k=0.60000 L=200.000 nH C=0.6888 nF R=0.473 Zin=0.243+0.000j eta=0.91403 error=0.9838 solver=OK
-    k=0.6000: simulated R_opt grid=25.464 ohm, peak coil efficiency=0.99646
-[5] Numerically matching the simulated optimum load to 12.5 ohm
-    root trial k=0.05000000 R_opt=2.093145 eta=0.958386 status=1
-    root trial k=0.60000000 R_opt=25.112159 eta=0.996464 status=1
-    root trial k=0.29865401 R_opt=12.499789 eta=0.992909 status=1
-    root trial k=0.29865906 R_opt=12.500000 eta=0.992909 status=1
-    root trial k=0.29866106 R_opt=12.500084 eta=0.992909 status=1
-    iteration=600 k=0.29866 L=200.000 nH C=0.6888 nF R=24.798 Zin=46.831+0.000j eta=0.99120 error=0.3147 solver=OK
-    root trial k=0.29865906 R_opt=12.500000 eta=0.992909 status=1
-    k=0.298659062, M=145.154277 nH, simulated R_opt=12.500000 ohm
-[6] Running L and C parameter sweep using the Simulink evaluator
-    L=133.33 nH C=1.033 nF simulated Zin=10.547-0.000j ohm
-    L=200.00 nH C=0.689 nF simulated Zin=23.730-0.000j ohm
-    L=266.67 nH C=0.517 nF simulated Zin=42.187-0.000j ohm
-    L=333.33 nH C=0.413 nF simulated Zin=65.918-0.000j ohm
-    L=400.00 nH C=0.344 nF simulated Zin=94.922-0.000j ohm
-[7] Refining L and C from three independent starting points
-    iteration=700 k=0.29866 L=176.008 nH C=1.0019 nF R=12.500 Zin=10.464+0.475j eta=0.99291 error=0.5027 solver=OK
-    iteration=700 L=176.007816 nH C=1.001886 nF Zin=10.46399+0.47510j eta=0.99291 error=0.6596 solver=OK
-    iteration=725 L=138.633275 nH C=1.001438 nF Zin=11.22572+0.00754j eta=0.99291 error=0.3918 solver=OK
-    iteration=750 L=137.114368 nH C=1.000898 nF Zin=11.23831-0.00362j eta=0.99291 error=0.3912 solver=OK
-    iteration=775 L=136.611773 nH C=1.000263 nF Zin=11.25207-0.00761j eta=0.99291 error=0.3907 solver=OK
-    iteration=800 k=0.29866 L=137.840 nH C=0.9954 nF R=12.500 Zin=11.364-0.003j eta=0.99291 error=0.3859 solver=OK
-    iteration=800 L=137.840090 nH C=0.995353 nF Zin=11.36386-0.00341j eta=0.99291 error=0.3859 solver=OK
-    iteration=825 L=257.224761 nH C=0.594316 nF Zin=30.90606-3.30599j eta=0.99291 error=0.04916 solver=OK
-    iteration=850 L=224.199247 nH C=0.613897 nF Zin=29.87407+0.02481j eta=0.99291 error=2.073e-05 solver=OK
-    iteration=875 L=224.866351 nH C=0.612614 nF Zin=29.99944+0.00062j eta=0.99291 error=2.269e-09 solver=OK
-    iteration=900 k=0.29866 L=224.874 nH C=0.6126 nF R=12.500 Zin=30.000-0.000j eta=0.99291 error=5.091e-12 solver=OK
-    iteration=900 L=224.873523 nH C=0.612609 nF Zin=29.99995-0.00003j eta=0.99291 error=7.549e-12 solver=OK
-    start 1 status=0 L=224.873457 nH C=0.612608029 nF objective=1.248e-15
-    iteration=925 L=200.763445 nH C=0.715783 nF Zin=21.90151-0.55888j eta=0.99291 error=0.0788 solver=OK
-    iteration=950 L=223.557236 nH C=0.612855 nF Zin=29.97359+0.15135j eta=0.99291 error=0.0001154 solver=OK
-    iteration=975 L=224.918694 nH C=0.612463 nF Zin=30.01420+0.00099j eta=0.99291 error=2.289e-07 solver=OK
-    iteration=1000 k=0.29866 L=224.873 nH C=0.6126 nF R=12.500 Zin=30.000-0.000j eta=0.99291 error=3.295e-12 solver=OK
-    iteration=1000 L=224.873493 nH C=0.612608 nF Zin=29.99996-0.00002j eta=0.99291 error=4.703e-12 solver=OK
-    iteration=1025 L=224.873472 nH C=0.612608 nF Zin=30.00000-0.00000j eta=0.99291 error=2.136e-14 solver=OK
-    iteration=1050 L=224.873462 nH C=0.612608 nF Zin=30.00000+0.00000j eta=0.99291 error=3.017e-19 solver=OK
-    start 2 status=1 L=224.873462 nH C=0.612608019 nF objective=3.017e-19
-    iteration=1075 L=218.865651 nH C=0.429628 nF Zin=40.60204+20.10372j eta=0.99291 error=0.8762 solver=OK
-    iteration=1100 k=0.29866 L=226.014 nH C=0.6094 nF R=12.500 Zin=30.313+0.004j eta=0.99291 error=0.0001092 solver=OK
-    iteration=1100 L=226.014290 nH C=0.609433 nF Zin=30.31340+0.00386j eta=0.99291 error=0.0001092 solver=OK
-    iteration=1125 L=224.894248 nH C=0.612568 nF Zin=30.00388-0.00077j eta=0.99291 error=1.972e-08 solver=OK
-    iteration=1150 L=224.872460 nH C=0.612609 nF Zin=29.99988+0.00007j eta=0.99291 error=3.922e-11 solver=OK
-    iteration=1175 L=224.873453 nH C=0.612608 nF Zin=30.00000-0.00000j eta=0.99291 error=1.381e-14 solver=OK
-    iteration=1200 k=0.29866 L=224.873 nH C=0.6126 nF R=12.500 Zin=30.000+0.000j eta=0.99291 error=2.432e-18 solver=OK
-    iteration=1200 L=224.873462 nH C=0.612608 nF Zin=30.00000+0.00000j eta=0.99291 error=2.517e-18 solver=OK
-    start 3 status=1 L=224.873462 nH C=0.612608019 nF objective=1.736e-19
-    Final simulated Zin=29.999999992+0.000000005j ohm; efficiency=0.992909
-[8] Running final physical circuit validation
-    transient run 1: stop time 20.0 us, solver ode23t, max step 2.950 ns
-    steady-state phasor window change 0.0018008; samples=95911
-    transient run 2: stop time 40.0 us, solver ode23t, max step 2.950 ns
-    steady-state phasor window change 0.00017928; samples=191145
-    physical Zin=29.99229577-0.00173564j ohm, phase=-0.00332 deg, eta=0.992742
-    Vrms=0.999973 Irms=0.033341 Itx=0.052192 Irx=0.051457 Vload=0.643216 Pin=0.033340 Pload=0.033098
-    accepted real-error=1 imag-error=1 converged=1 finite=1
-[9] Comparing independent theoretical predictions with simulation-derived parameters
-    theory k=0.298658799 M=145.154149 nH L=224.873462 nH C=0.612608 nF
-    simulation k=0.298659062 M=145.154277 nH L=224.873462 nH C=0.612608 nF
-[10] Saving experiment results: model, CSV, log, report and PNG figures
-    Reopened and compiled LCCC_inverse_design.slx successfully
-    Actual execution status: complete
-[1] MATLAB 26.2.0.3433840 (R2026b) Update 1; Simulink 26.2; Simscape Electrical 26.2; Optimization Toolbox     Entry point: run_experiment; working folder: C:\Users\charl\Documents\LCCC_inverse_design
-    Source check: technical bg.pdf available=0; handwritten image supplied=0
-[2] Building Simulink models; initial k=0.2000 L=200.000 nH
-[警告: The model name 'LCCC_phasor' is shadowing another name in the MATLAB workspace or path. Type "which -all LCCC_phasor" at the command line to find the other uses of this
-name. You should change the name of the model to avoid problems.] 
-[> 位置：build_model (第 12 行)
-位置: run_experiment (第 11 行)] 
-[警告: The model name 'LCCC_inverse_design' is shadowing another name in the MATLAB workspace or path. Type "which -all LCCC_inverse_design" at the command line to find the other
-uses of this name. You should change the name of the model to avoid problems.] 
-[> 位置：build_model (第 21 行)
-位置: run_experiment (第 11 行)] 
-[3] Checking circuit connectivity and compiling both models
-    Build and compile passed. R1=0.043538 ohm R2=0.044478 ohm
-[4] Running coupling coefficient and load sweep through Simulink
-    k=0.0500: simulated R_opt grid=2.079 ohm, peak coil efficiency=0.95838
-    k=0.1000: simulated R_opt grid=4.117 ohm, peak coil efficiency=0.97897
-    iteration=100 k=0.15000 L=200.000 nH C=0.6888 nF R=0.836 Zin=6.620-0.000j eta=0.94854 error=0.6073 solver=OK
-    k=0.1500: simulated R_opt grid=6.493 ohm, peak coil efficiency=0.98592
-    k=0.2000: simulated R_opt grid=8.154 ohm, peak coil efficiency=0.98943
-    iteration=200 k=0.25000 L=200.000 nH C=0.6888 nF R=2.611 Zin=7.187-0.000j eta=0.98219 error=0.5783 solver=OK
-    k=0.2500: simulated R_opt grid=10.239 ohm, peak coil efficiency=0.99153
-    k=0.3000: simulated R_opt grid=12.858 ohm, peak coil efficiency=0.99294
-    iteration=300 k=0.35000 L=200.000 nH C=0.6888 nF R=8.154 Zin=11.314-0.000j eta=0.99289 error=0.388 solver=OK
-    k=0.3500: simulated R_opt grid=14.409 ohm, peak coil efficiency=0.99395
-    k=0.4000: simulated R_opt grid=16.147 ohm, peak coil efficiency=0.99470
-    iteration=400 k=0.45000 L=200.000 nH C=0.6888 nF R=25.464 Zin=21.263-0.000j eta=0.99507 error=0.08481 solver=OK
-    k=0.4500: simulated R_opt grid=18.095 ohm, peak coil efficiency=0.99528
-    k=0.5000: simulated R_opt grid=20.278 ohm, peak coil efficiency=0.99576
-    k=0.5500: simulated R_opt grid=22.723 ohm, peak coil efficiency=0.99614
-    iteration=500 k=0.60000 L=200.000 nH C=0.6888 nF R=0.473 Zin=0.243+0.000j eta=0.91403 error=0.9838 solver=OK
-    k=0.6000: simulated R_opt grid=25.464 ohm, peak coil efficiency=0.99646
-[5] Numerically matching the simulated optimum load to 12.5 ohm
-    root trial k=0.05000000 R_opt=2.093145 eta=0.958386 status=1
-    root trial k=0.60000000 R_opt=25.112159 eta=0.996464 status=1
-    root trial k=0.29865401 R_opt=12.499789 eta=0.992909 status=1
-    root trial k=0.29865906 R_opt=12.500000 eta=0.992909 status=1
-    root trial k=0.29866106 R_opt=12.500084 eta=0.992909 status=1
-    iteration=600 k=0.29866 L=200.000 nH C=0.6888 nF R=24.798 Zin=46.831+0.000j eta=0.99120 error=0.3147 solver=OK
-    root trial k=0.29865906 R_opt=12.500000 eta=0.992909 status=1
-    k=0.298659062, M=145.154277 nH, simulated R_opt=12.500000 ohm
-[6] Running L and C parameter sweep using the Simulink evaluator
-    L=133.33 nH C=1.033 nF simulated Zin=10.547-0.000j ohm
-    L=200.00 nH C=0.689 nF simulated Zin=23.730-0.000j ohm
-    L=266.67 nH C=0.517 nF simulated Zin=42.187-0.000j ohm
-    L=333.33 nH C=0.413 nF simulated Zin=65.918-0.000j ohm
-    L=400.00 nH C=0.344 nF simulated Zin=94.922-0.000j ohm
-[7] Refining L and C from three independent starting points
-    iteration=700 k=0.29866 L=176.008 nH C=1.0019 nF R=12.500 Zin=10.464+0.475j eta=0.99291 error=0.5027 solver=OK
-    iteration=700 L=176.007816 nH C=1.001886 nF Zin=10.46399+0.47510j eta=0.99291 error=0.6596 solver=OK
-    iteration=725 L=138.633275 nH C=1.001438 nF Zin=11.22572+0.00754j eta=0.99291 error=0.3918 solver=OK
-    iteration=750 L=137.114368 nH C=1.000898 nF Zin=11.23831-0.00362j eta=0.99291 error=0.3912 solver=OK
-    iteration=775 L=136.611773 nH C=1.000263 nF Zin=11.25207-0.00761j eta=0.99291 error=0.3907 solver=OK
-    iteration=800 k=0.29866 L=137.840 nH C=0.9954 nF R=12.500 Zin=11.364-0.003j eta=0.99291 error=0.3859 solver=OK
-    iteration=800 L=137.840090 nH C=0.995353 nF Zin=11.36386-0.00341j eta=0.99291 error=0.3859 solver=OK
-    iteration=825 L=257.224761 nH C=0.594316 nF Zin=30.90606-3.30599j eta=0.99291 error=0.04916 solver=OK
-    iteration=850 L=224.199247 nH C=0.613897 nF Zin=29.87407+0.02481j eta=0.99291 error=2.073e-05 solver=OK
-    iteration=875 L=224.866351 nH C=0.612614 nF Zin=29.99944+0.00062j eta=0.99291 error=2.269e-09 solver=OK
-    iteration=900 k=0.29866 L=224.874 nH C=0.6126 nF R=12.500 Zin=30.000-0.000j eta=0.99291 error=5.091e-12 solver=OK
-    iteration=900 L=224.873523 nH C=0.612609 nF Zin=29.99995-0.00003j eta=0.99291 error=7.549e-12 solver=OK
-    start 1 status=0 L=224.873457 nH C=0.612608029 nF objective=1.248e-15
-    iteration=925 L=200.763445 nH C=0.715783 nF Zin=21.90151-0.55888j eta=0.99291 error=0.0788 solver=OK
-    iteration=950 L=223.557236 nH C=0.612855 nF Zin=29.97359+0.15135j eta=0.99291 error=0.0001154 solver=OK
-    iteration=975 L=224.918694 nH C=0.612463 nF Zin=30.01420+0.00099j eta=0.99291 error=2.289e-07 solver=OK
-    iteration=1000 k=0.29866 L=224.873 nH C=0.6126 nF R=12.500 Zin=30.000-0.000j eta=0.99291 error=3.295e-12 solver=OK
-    iteration=1000 L=224.873493 nH C=0.612608 nF Zin=29.99996-0.00002j eta=0.99291 error=4.703e-12 solver=OK
-    iteration=1025 L=224.873472 nH C=0.612608 nF Zin=30.00000-0.00000j eta=0.99291 error=2.136e-14 solver=OK
-    iteration=1050 L=224.873462 nH C=0.612608 nF Zin=30.00000+0.00000j eta=0.99291 error=3.017e-19 solver=OK
-    start 2 status=1 L=224.873462 nH C=0.612608019 nF objective=3.017e-19
-    iteration=1075 L=218.865651 nH C=0.429628 nF Zin=40.60204+20.10372j eta=0.99291 error=0.8762 solver=OK
-    iteration=1100 k=0.29866 L=226.014 nH C=0.6094 nF R=12.500 Zin=30.313+0.004j eta=0.99291 error=0.0001092 solver=OK
-    iteration=1100 L=226.014290 nH C=0.609433 nF Zin=30.31340+0.00386j eta=0.99291 error=0.0001092 solver=OK
-    iteration=1125 L=224.894248 nH C=0.612568 nF Zin=30.00388-0.00077j eta=0.99291 error=1.972e-08 solver=OK
-    iteration=1150 L=224.872460 nH C=0.612609 nF Zin=29.99988+0.00007j eta=0.99291 error=3.922e-11 solver=OK
-    iteration=1175 L=224.873453 nH C=0.612608 nF Zin=30.00000-0.00000j eta=0.99291 error=1.381e-14 solver=OK
-    iteration=1200 k=0.29866 L=224.873 nH C=0.6126 nF R=12.500 Zin=30.000+0.000j eta=0.99291 error=2.432e-18 solver=OK
-    iteration=1200 L=224.873462 nH C=0.612608 nF Zin=30.00000+0.00000j eta=0.99291 error=2.517e-18 solver=OK
-    start 3 status=1 L=224.873462 nH C=0.612608019 nF objective=1.736e-19
-    Final simulated Zin=29.999999992+0.000000005j ohm; efficiency=0.992909
-[8] Running final physical circuit validation
-    transient run 1: stop time 20.0 us, solver ode23t, max step 2.950 ns
-    steady-state phasor window change 0.0018008; samples=95911
-    transient run 2: stop time 40.0 us, solver ode23t, max step 2.950 ns
-    steady-state phasor window change 0.00017928; samples=191145
-    physical Zin=29.99229577-0.00173564j ohm, phase=-0.00332 deg, eta=0.992742
-    Vrms=0.999973 Irms=0.033341 Itx=0.052192 Irx=0.051457 Vload=0.643216 Pin=0.033340 Pload=0.033098
-    accepted real-error=1 imag-error=1 converged=1 finite=1
-[9] Comparing independent theoretical predictions with simulation-derived parameters
-    theory k=0.298658799 M=145.154149 nH L=224.873462 nH C=0.612608 nF
-    simulation k=0.298659062 M=145.154277 nH L=224.873462 nH C=0.612608 nF
-[10] Saving experiment results: model, CSV, log, report and PNG figures
-    Reopened and compiled both .slx models successfully
-    Actual execution status: complete
-Toolbox audit: MATLAB 26.2.0.3433840 (R2026b) Update 1; Simulink 26.2; Simscape Electrical 26.2; Optimization Toolbox 26.2
-[1] MATLAB 26.2.0.3433840 (R2026b) Update 1; Simulink 26.2; Simscape Electrical 26.2; Optimization Toolbox 26.2
-    Entry point: run_experiment; working folder: C:\Users\charl\Documents\LCCC_inverse_design
-    Source check: technical bg.pdf available=0; handwritten image supplied=0
-[2] Building Simulink models; initial k=0.2000 L=200.000 nH
-[警告: The model name 'LCCC_phasor' is shadowing another name in the MATLAB workspace or path. Type "which -all LCCC_phasor" at the command line to find the other uses of this
-name. You should change the name of the model to avoid problems.] 
-[> 位置：build_model (第 12 行)
-位置: run_experiment (第 14 行)] 
-[警告: The model name 'LCCC_inverse_design' is shadowing another name in the MATLAB workspace or path. Type "which -all LCCC_inverse_design" at the command line to find the other
-uses of this name. You should change the name of the model to avoid problems.] 
-[> 位置：build_model (第 21 行)
-位置: run_experiment (第 14 行)] 
-[3] Checking circuit connectivity and compiling both models
-    Build and compile passed. R1=0.043538 ohm R2=0.044478 ohm
-[4] Running coupling coefficient and load sweep through Simulink
-    k=0.0500: simulated R_opt grid=2.079 ohm, peak coil efficiency=0.95838
-    k=0.1000: simulated R_opt grid=4.117 ohm, peak coil efficiency=0.97897
-    iteration=100 k=0.15000 L=200.000 nH C=0.6888 nF R=0.836 Zin=6.620-0.000j eta=0.94854 error=0.6073 solver=OK
-    k=0.1500: simulated R_opt grid=6.493 ohm, peak coil efficiency=0.98592
-    k=0.2000: simulated R_opt grid=8.154 ohm, peak coil efficiency=0.98943
-    iteration=200 k=0.25000 L=200.000 nH C=0.6888 nF R=2.611 Zin=7.187-0.000j eta=0.98219 error=0.5783 solver=OK
-    k=0.2500: simulated R_opt grid=10.239 ohm, peak coil efficiency=0.99153
-    k=0.3000: simulated R_opt grid=12.858 ohm, peak coil efficiency=0.99294
-    iteration=300 k=0.35000 L=200.000 nH C=0.6888 nF R=8.154 Zin=11.314-0.000j eta=0.99289 error=0.388 solver=OK
-    k=0.3500: simulated R_opt grid=14.409 ohm, peak coil efficiency=0.99395
-    k=0.4000: simulated R_opt grid=16.147 ohm, peak coil efficiency=0.99470
-    iteration=400 k=0.45000 L=200.000 nH C=0.6888 nF R=25.464 Zin=21.263-0.000j eta=0.99507 error=0.08481 solver=OK
-    k=0.4500: simulated R_opt grid=18.095 ohm, peak coil efficiency=0.99528
-    k=0.5000: simulated R_opt grid=20.278 ohm, peak coil efficiency=0.99576
-    k=0.5500: simulated R_opt grid=22.723 ohm, peak coil efficiency=0.99614
-    iteration=500 k=0.60000 L=200.000 nH C=0.6888 nF R=0.473 Zin=0.243+0.000j eta=0.91403 error=0.9838 solver=OK
-    k=0.6000: simulated R_opt grid=25.464 ohm, peak coil efficiency=0.99646
-[5] Numerically matching the simulated optimum load to 12.5 ohm
-    root trial k=0.05000000 R_opt=2.093145 eta=0.958386 status=1
-    root trial k=0.60000000 R_opt=25.112159 eta=0.996464 status=1
-    root trial k=0.29865401 R_opt=12.499789 eta=0.992909 status=1
-    root trial k=0.29865906 R_opt=12.500000 eta=0.992909 status=1
-    root trial k=0.29866106 R_opt=12.500084 eta=0.992909 status=1
-    iteration=600 k=0.29866 L=200.000 nH C=0.6888 nF R=24.798 Zin=46.831+0.000j eta=0.99120 error=0.3147 solver=OK
-    root trial k=0.29865906 R_opt=12.500000 eta=0.992909 status=1
-    k=0.298659062, M=145.154277 nH, simulated R_opt=12.500000 ohm
-[6] Running L and C parameter sweep using the Simulink evaluator
-    L=133.33 nH C=1.033 nF simulated Zin=10.547-0.000j ohm
-    L=200.00 nH C=0.689 nF simulated Zin=23.730-0.000j ohm
-    L=266.67 nH C=0.517 nF simulated Zin=42.187-0.000j ohm
-    L=333.33 nH C=0.413 nF simulated Zin=65.918-0.000j ohm
-    L=400.00 nH C=0.344 nF simulated Zin=94.922-0.000j ohm
-[7] Refining L and C from three independent starting points
-    iteration=700 k=0.29866 L=176.008 nH C=1.0019 nF R=12.500 Zin=10.464+0.475j eta=0.99291 error=0.5027 solver=OK
-    iteration=700 L=176.007816 nH C=1.001886 nF Zin=10.46399+0.47510j eta=0.99291 error=0.6596 solver=OK
-    iteration=725 L=138.633275 nH C=1.001438 nF Zin=11.22572+0.00754j eta=0.99291 error=0.3918 solver=OK
-    iteration=750 L=137.114368 nH C=1.000898 nF Zin=11.23831-0.00362j eta=0.99291 error=0.3912 solver=OK
-    iteration=775 L=136.611773 nH C=1.000263 nF Zin=11.25207-0.00761j eta=0.99291 error=0.3907 solver=OK
-    iteration=800 k=0.29866 L=137.840 nH C=0.9954 nF R=12.500 Zin=11.364-0.003j eta=0.99291 error=0.3859 solver=OK
-    iteration=800 L=137.840090 nH C=0.995353 nF Zin=11.36386-0.00341j eta=0.99291 error=0.3859 solver=OK
-    iteration=825 L=257.224761 nH C=0.594316 nF Zin=30.90606-3.30599j eta=0.99291 error=0.04916 solver=OK
-    iteration=850 L=224.199247 nH C=0.613897 nF Zin=29.87407+0.02481j eta=0.99291 error=2.073e-05 solver=OK
-    iteration=875 L=224.866351 nH C=0.612614 nF Zin=29.99944+0.00062j eta=0.99291 error=2.269e-09 solver=OK
-    iteration=900 k=0.29866 L=224.874 nH C=0.6126 nF R=12.500 Zin=30.000-0.000j eta=0.99291 error=5.091e-12 solver=OK
-    iteration=900 L=224.873523 nH C=0.612609 nF Zin=29.99995-0.00003j eta=0.99291 error=7.549e-12 solver=OK
-    start 1 status=0 L=224.873457 nH C=0.612608029 nF objective=1.248e-15
-    iteration=925 L=200.763445 nH C=0.715783 nF Zin=21.90151-0.55888j eta=0.99291 error=0.0788 solver=OK
-    iteration=950 L=223.557236 nH C=0.612855 nF Zin=29.97359+0.15135j eta=0.99291 error=0.0001154 solver=OK
-    iteration=975 L=224.918694 nH C=0.612463 nF Zin=30.01420+0.00099j eta=0.99291 error=2.289e-07 solver=OK
-    iteration=1000 k=0.29866 L=224.873 nH C=0.6126 nF R=12.500 Zin=30.000-0.000j eta=0.99291 error=3.295e-12 solver=OK
-    iteration=1000 L=224.873493 nH C=0.612608 nF Zin=29.99996-0.00002j eta=0.99291 error=4.703e-12 solver=OK
-    iteration=1025 L=224.873472 nH C=0.612608 nF Zin=30.00000-0.00000j eta=0.99291 error=2.136e-14 solver=OK
-    iteration=1050 L=224.873462 nH C=0.612608 nF Zin=30.00000+0.00000j eta=0.99291 error=3.017e-19 solver=OK
-    start 2 status=1 L=224.873462 nH C=0.612608019 nF objective=3.017e-19
-    iteration=1075 L=218.865651 nH C=0.429628 nF Zin=40.60204+20.10372j eta=0.99291 error=0.8762 solver=OK
-    iteration=1100 k=0.29866 L=226.014 nH C=0.6094 nF R=12.500 Zin=30.313+0.004j eta=0.99291 error=0.0001092 solver=OK
-    iteration=1100 L=226.014290 nH C=0.609433 nF Zin=30.31340+0.00386j eta=0.99291 error=0.0001092 solver=OK
-    iteration=1125 L=224.894248 nH C=0.612568 nF Zin=30.00388-0.00077j eta=0.99291 error=1.972e-08 solver=OK
-    iteration=1150 L=224.872460 nH C=0.612609 nF Zin=29.99988+0.00007j eta=0.99291 error=3.922e-11 solver=OK
-    iteration=1175 L=224.873453 nH C=0.612608 nF Zin=30.00000-0.00000j eta=0.99291 error=1.381e-14 solver=OK
-    iteration=1200 k=0.29866 L=224.873 nH C=0.6126 nF R=12.500 Zin=30.000+0.000j eta=0.99291 error=2.432e-18 solver=OK
-    iteration=1200 L=224.873462 nH C=0.612608 nF Zin=30.00000+0.00000j eta=0.99291 error=2.517e-18 solver=OK
-    start 3 status=1 L=224.873462 nH C=0.612608019 nF objective=1.736e-19
-    Final simulated Zin=29.999999992+0.000000005j ohm; efficiency=0.992909
-[8] Running final physical circuit validation
-    transient run 1: stop time 20.0 us, solver ode23t, max step 2.950 ns
-    steady-state phasor window change 0.0018008; samples=95911
-    transient run 2: stop time 40.0 us, solver ode23t, max step 2.950 ns
-    steady-state phasor window change 0.00017928; samples=191145
-    physical Zin=29.99229577-0.00173564j ohm, phase=-0.00332 deg, eta=0.992742
-    Vrms=0.999973 Irms=0.033341 Itx=0.052192 Irx=0.051457 Vload=0.643216 Pin=0.033340 Pload=0.033098
-    accepted real-error=1 imag-error=1 converged=1 finite=1
-[9] Comparing independent theoretical predictions with simulation-derived parameters
-    theory k=0.298658799 M=145.154149 nH L=224.873462 nH C=0.612608 nF
-    simulation k=0.298659062 M=145.154277 nH L=224.873462 nH C=0.612608 nF
-[10] Saving experiment results: model, CSV, log, report and PNG figures
-    Reopened and compiled both .slx models successfully
-    Actual execution status: complete
+Serial-link reproducible design run
+MATLAB 26.2.0.3433840 (R2026b) Update 1
+
+[0] Known inputs: f, RL, L1, L2, Q1, Q2.
+    f = 13.560000 MHz, RL = 12.500000 ohm.
+    L1 = 486.020000 nH, L2 = 486.020000 nH.
+    Q1 = 951.100000, Q2 = 931.000000.
+    Design requirement: Zin = 30.000000 + j0 ohm at f.
+
+[1] Q -> winding resistances.
+    R1 = omega*L1/Q1 = 0.043537904 ohm.
+    R2 = omega*L2/Q2 = 0.044477874 ohm.
+
+[2] R1, R2 and RL -> coupling k -> mutual inductance M.
+    k = 0.2986587990.
+    M = k*sqrt(L1*L2) = 145.154149499 nH.
+    Optimum-load equation returns 12.500000000 ohm.
+
+[3] M and the input-impedance requirement -> L and C.
+    L = 224.873265022 nH.
+    C = 0.612608557 nF.
+    Supporting tuning: C1 = 0.527516786 nF, C2 = 0.283443657 nF.
+
+[4] Building the frequency-domain Simulink model and physical Simscape model.
+    Both models compiled successfully.
+[5] Checking the nominal point with the Simulink phasor model.
+    Zin = 30.000000000000 -0.000000000000j ohm.
+    End-to-end efficiency = 99.290877241%.
+
+[6] Verifying the derived k and M with a Simulink load sweep.
+    Sweep peak: RL = 12.5000 ohm; required RL = 12.5000 ohm.
+[7] Verifying the final design over frequency with Simulink.
+[8] Running the independent physical Simscape validation.
+    Transient run 1: stop time 20.0 us.
+    Adjacent-window phasor change = 0.00180077.
+    Transient run 2: stop time 40.0 us.
+    Adjacent-window phasor change = 0.000179217.
+    Physical Zin = 29.992296506 -0.001738268j ohm.
+    Pin = 0.033340115 W, Pload = 0.033098124 W, efficiency = 99.274173%.
+    Overall acceptance: PASS.
+[9] Writing the compact audit files.
+    Saved design_summary.csv, verification_summary.csv and serial_link_results.mat.
+    Final status: ALL CHECKS PASSED.
