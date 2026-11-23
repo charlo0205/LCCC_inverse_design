@@ -1,5 +1,9 @@
 # LCC-C 无线电能传输实验
 
+## Weekly log (2026-11-23)
+
+I updated the LCC-C Simulink model to measure voltage and current for all three compensation capacitors. I used the simulated waveforms to check peak voltage and RMS ripple current. After a capacitor failed during lab testing, these results will help me choose suitable RF voltage and current ratings for the replacement before soldering it onto the board.
+
 ## 当前进度（2026-11-19）
 
 已保存 MATLAB R2026b Update 1 中当前打开的 `LCC_C.slx`，包括此前未保存的模型修改。
