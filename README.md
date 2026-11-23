@@ -4,6 +4,8 @@
 
 I updated the LCC-C Simulink model to measure voltage and current for all three compensation capacitors. I used the simulated waveforms to check peak voltage and RMS ripple current. After a capacitor failed during lab testing, these results will help me choose suitable RF voltage and current ratings for the replacement before soldering it onto the board.
 
+I ran three copies of the circuit together with 12.5 Ω, 30 Ω, and 50 Ω loads and compared the logged waveforms in MATLAB. Over the final ten cycles, load RMS voltage rose (207.55, 232.67, and 236.82 V), while load RMS current (16.60, 7.76, and 4.74 A) and average load power (3.45, 1.80, and 1.12 kW) fell. Across the full 5 µs run, the peak voltages across `C` and `C2` fell as load resistance increased, while the `C1` peak rose slightly (305, 311, and 314 V).
+
 ## 当前进度（2026-11-19）
 
 已保存 MATLAB R2026b Update 1 中当前打开的 `LCC_C.slx`，包括此前未保存的模型修改。
@@ -20,3 +22,9 @@ I updated the LCC-C Simulink model to measure voltage and current for all three 
 ## 继续实验
 
 在 MATLAB 中打开仓库内的 `LCC_C.slx`。模型的 `InitFcn` 包含参数初始化代码；运行模型时会执行该初始化。需要 MATLAB、Simulink 及模型使用的 Simscape 组件。
+
+Run `LCC_C.slx` once with the repository as the MATLAB current folder, then run the following command to build the summary and waveform tables.
+
+```matlab
+[loadSummary, loadWaveforms] = compare_lcc_loads(out);
+```
